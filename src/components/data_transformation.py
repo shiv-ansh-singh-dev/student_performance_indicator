@@ -3,7 +3,10 @@ from dataclasses import dataclass
 
 import numpy as np 
 import pandas as pd
-from sklearn.compose import ColumnTransformer #use to create pipelines for numerical and categorical columns
+
+#use to create pipelines for numerical and categorical columns
+from sklearn.compose import ColumnTransformer 
+
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder,StandardScaler
