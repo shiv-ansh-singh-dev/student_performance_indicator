@@ -36,7 +36,8 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         logging.info("Entered the data ingestion method or component")
         try:
-            df=pd.read_csv('notebook\data\stud.csv') #reading from dataset also we can read from mongodb or any other database
+            df=pd.read_csv('notebook/data/stud.csv') 
+            #reading from dataset also we can read from mongodb or any other database
             logging.info('Read the dataset as dataframe') #use logging to log the information so that we can track the information and errors
 
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path),exist_ok=True) 
