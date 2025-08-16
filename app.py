@@ -45,5 +45,5 @@ def predict_datapoint():
 
 if __name__=="__main__":
     app.run(host='127.0.0.1',port=5000,debug=True) #debug=True will reload the server automatically when we make changes to the code
-
+    #for deployement you need to remove port=5000,debug=True
 
